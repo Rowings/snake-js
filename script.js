@@ -12,7 +12,15 @@ function jump() {
       }, 300);
     }
 }
+//fonction pour avoir le statut du dino 
+let isAlive = setInterval(function () {
+    //permet de savoir ou se trouve le dino par rapport au top
+    // parseInt sert à arrondir les resultat lors du saut
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    
+},10);
 
+// definition des touches pour sauter 
 document.addEventListener("keydown", function(event){
 
     jump();
