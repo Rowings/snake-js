@@ -14,3 +14,29 @@
     position:relative;
     top: 150px;
 }
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top:130px;
+    }
+
+    50% {
+        top:80px;
+    }
+
+    80% {
+        top: 130px;
+
+    }
+    100% {
+        top: 150px;
+    }
+}
