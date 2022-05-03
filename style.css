@@ -65,3 +65,28 @@
     }
     
 }
+
+.game > #road {
+    height: 30px;
+    width: 1200px;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+.game > #road > img {
+    height: 30%;
+    width: auto;
+    position: relative;
+    top: 90px;
+    left: 0;
+    animation : roadAnimate 1s linear infinite;
+}
+
+@keyframes roadAnimate {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -15px;
+    }
+}
